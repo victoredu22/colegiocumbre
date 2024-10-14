@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { Box } from "@mui/system";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";

@@ -1,14 +1,6 @@
-import {
-  Box,
-  Button,
-  FormControl,
-  OutlinedInput,
-  TextField,
-} from "@mui/material";
-
+import { Box, Button, OutlinedInput, TextField } from "@mui/material";
 import { useForm } from "../hook/useForm";
-
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 
 export const FormContact: React.FC = () => {
@@ -22,7 +14,6 @@ export const FormContact: React.FC = () => {
     message: "",
   });
 
-  // Definir el objeto de estilo
   const inputStyles = {
     "& .MuiOutlinedInput-notchedOutline": {
       border: `1px solid #ddd8d8 !important`,
@@ -42,17 +33,6 @@ export const FormContact: React.FC = () => {
     m: 1,
     bgcolor: "#F5F5F5",
     borderRadius: 1,
-  };
-
-  const styleObj = {
-    backgroundColor: "#F5F5F5",
-    boxShadow: 0,
-    "&:hover": {
-      backgroundColor: "#8080805c",
-    },
-    "&:active": {
-      backgroundColor: "#8080805c",
-    },
   };
 
   // Definir el esquema de validación Yup
