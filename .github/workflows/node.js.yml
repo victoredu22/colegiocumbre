@@ -1,0 +1,36 @@
+name: Continuous Integration (CI)
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    # Defines the type of runner the job runs on
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Deploy nodejs app
+        uses: appleboy/ssh-action@v0.1.2
+        with:
+          host: ${{secrets.SSH_HOST}}
+          key: ${{secrets.SSH_KEY}}
+          username: ${{secrets.SSH_USERNAME}}
+          script: |
+            cd /var/www/colegiocumbre/
+            pm2 stop colegioCumbre
+            git fetch && git merge --ff-only origin/master
+            npm install
+            npm cache clean --force
+            npm cache verify
+            npm run build
+            pm2 start colegioCumbre
