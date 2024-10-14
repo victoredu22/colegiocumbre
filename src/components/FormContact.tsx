@@ -4,7 +4,7 @@ import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 
 export const FormContact: React.FC = () => {
-  const [formValues, handleInputChange] = useForm({
+  const [formValues] = useForm({
     nombre: "",
     apellido: "",
     email: "",

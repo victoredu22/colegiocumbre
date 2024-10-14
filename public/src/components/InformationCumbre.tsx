@@ -1,5 +1,4 @@
 import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
 import { TitleSection } from "./section/TitleSection";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import Groups2Icon from "@mui/icons-material/Groups2";
