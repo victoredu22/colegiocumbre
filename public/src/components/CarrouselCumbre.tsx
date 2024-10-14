@@ -2,7 +2,6 @@ import styles from "../styles/Home.module.css";
 import { Box, Button, Typography } from "@mui/material";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Logo from "../../../public/assets/img/integracion234.jpg";
 
 export const CarrouselCumbre = () => {
   return (

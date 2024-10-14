@@ -1,9 +1,8 @@
-import { useState } from "react";
 import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
 import store from "./redux/store";
-import { Navbar } from "./components/Navbar";
+
 import "animate.css";
 
 function App() {

@@ -1,18 +1,12 @@
-import {
-  Box,
-  Button,
-  FormControl,
-  OutlinedInput,
-  TextField,
-} from "@mui/material";
+import { Box, Button, OutlinedInput, TextField } from "@mui/material";
 
 import { useForm } from "../hook/useForm";
 
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 
 export const FormContact: React.FC = () => {
-  const [formValues, handleInputChange] = useForm({
+  const [formValues] = useForm({
     nombre: "",
     apellido: "",
     email: "",

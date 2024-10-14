@@ -1,17 +1,6 @@
-import React from "react";
-import {
-  Grid,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  Paper,
-} from "@mui/material";
 import Typography from "@mui/material/Typography";
-import InboxIcon from "@mui/icons-material/Inbox";
-import ListItemText from "@mui/material/ListItemText";
-import styles from "@/styles/Layout.module.css";
-import { Box, Container } from "@mui/system";
+
+import { Box } from "@mui/system";
 
 export const Footer = () => {
   return (

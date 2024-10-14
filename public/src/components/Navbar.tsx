@@ -1,15 +1,4 @@
-import {
-  AppBar,
-  Button,
-  Divider,
-  IconButton,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
-  Toolbar,
-  Typography,
-} from "@mui/material";
+import { AppBar, Button, Toolbar } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -19,26 +8,8 @@ import { ModalMenu } from "./ModalMenu";
 import { listItem } from "../utils/constants";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneIcon from "@mui/icons-material/Phone";
-interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
-  window?: () => Window;
-}
 
-const drawerWidth = 240;
-const navItems = [
-  "Inicio",
-  "Comunicacion",
-  "Nuestro Colegio",
-  "Contacto",
-  "Iniciar Sesion",
-];
-
-export const Navbar = (props: Props) => {
-  const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+export const Navbar = () => {
   const [openModal, setOpenModal] = React.useState<boolean>(false);
 
   const handleCloseModal = () => {
@@ -47,31 +18,6 @@ export const Navbar = (props: Props) => {
   const handleOpenModal = () => {
     setOpenModal(true);
   };
-
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
-  };
-
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
-      </Typography>
-      <Divider />
-      <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
-              <ListItemText primary={item} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
-  );
-
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
 
   return (
     <Box sx={{ display: "flex" }}>

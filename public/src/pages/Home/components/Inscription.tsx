@@ -1,5 +1,4 @@
-import { Box, Button, Card, CardMedia, Typography } from "@mui/material";
-import React from "react";
+import { Box, Button, Typography } from "@mui/material";
 
 export const Inscription = () => {
   return (
