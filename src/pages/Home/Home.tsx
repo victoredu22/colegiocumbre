@@ -1,14 +1,10 @@
 import { Layout } from "../../components/layout";
 import { CarrouselCumbre } from "../../components/CarrouselCumbre";
 import { SectionUs } from "./components/SectionUs";
-import { SectionEnrollment } from "./components/SectionEnrollment";
+
 import { SectionNotice } from "./components/SectionNotice";
-import {
-  activityItems,
-  proyectItems,
-  typeSection,
-} from "../../utils/constants";
-import { SectionGallery } from "./components/SectionGallery";
+import { proyectItems, typeSection } from "../../utils/constants";
+
 import { SectionInformaction } from "./components/SectionInformaction";
 import { Footer } from "../../components/Footer";
 import { Inscription } from "./components/Inscription";

@@ -1,11 +1,11 @@
-import React, { Children } from "react";
+import React from "react";
 import theme from "../../global/MainTheme";
-import { Button, Checkbox, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 
 import styles from "../../styles/Layout.module.css";
 import { Navbar } from "../Navbar";
 
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
 
 export interface LayoutInterface {
   children: React.ReactNode | null;

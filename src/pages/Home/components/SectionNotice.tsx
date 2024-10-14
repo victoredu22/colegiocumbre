@@ -1,6 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { TitleSection } from "../../../components/section/TitleSection";
-import { proyectItems, typeSection } from "../../../utils/constants";
+import { typeSection } from "../../../utils/constants";
 import { NoticeInterface } from "../../../interfaces/ProyectInterface";
 
 interface titleProps {
