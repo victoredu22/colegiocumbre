@@ -11,9 +11,9 @@ export const Information = () => {
         sx={{ width: { xs: "100%", sm: "100%", md: "34%" } }}
         bgcolor="#F5F5F5"
       >
-        <Box sx={{ padding: "50px" }}>
-          <Typography variant="h4">Kinder</Typography>
-          <Typography>
+        <Box sx={{ padding: "50px" }} data-aos="fade-up">
+          <Typography variant="subtitle2">Kinder</Typography>
+          <Typography marginTop={5}>
             Fomentamos un enfoque educativo que potencia el aprendizaje
             significativo. Guiamos a nuestros alumnos para que construyan su
             propio conocimiento a partir de sus experiencias previas, lo cual
@@ -43,10 +43,11 @@ export const Information = () => {
       <Box
         sx={{ width: { xs: "100%", sm: "100%", md: "33%" } }}
         bgcolor="#F5F5F5"
+        data-aos="fade-up"
       >
         <Box sx={{ padding: "50px" }}>
           <Typography variant="h4">Primaria</Typography>
-          <Typography>
+          <Typography marginTop={5}>
             En el Colegio Cumbres San Ramón, reconocemos que el aprendizaje
             implica el desarrollo y la puesta en práctica de diversas
             habilidades. Nuestro programa educativo se enfoca en cultivar

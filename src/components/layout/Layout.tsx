@@ -19,14 +19,7 @@ const Layout: React.FC<LayoutInterface> = ({ children }: LayoutInterface) => {
       <ThemeProvider theme={theme}>
         <Navbar />
         <Grid className={styles.app_wrapper}>
-          <Grid
-            className={styles.main_container}
-            sx={{
-              marginTop: { xs: "20px", sm: "60px", md: "2%" },
-            }}
-          >
-            {children}
-          </Grid>
+          <Grid className={styles.main_container}>{children}</Grid>
         </Grid>
       </ThemeProvider>
     </>

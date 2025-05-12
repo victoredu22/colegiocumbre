@@ -1,0 +1,47 @@
+.bubble-container {
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.orbit-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  animation: rotateOrbit 6s linear infinite;
+}
+
+.bubble {
+  position: absolute; /* esto es clave */
+  width: 10px;
+  height: 10px;
+  background-color: #1341ad8c;
+  border-radius: 50%;
+  top: 50%;
+  left: 10%;
+  transform-origin: 0 0;
+  animation: circleMove 6s linear infinite;
+  z-index: -2;
+}
+
+/* Burbuja con movimiento circular */
+.bubble:nth-child(1) {
+  top: 50%;
+  left: 10%;
+  transform-origin: 0 0; /* centro del elemento */
+  animation: circleMove 6s linear infinite;
+
+}
+
+
+
+@keyframes circleMove {
+  0% {
+    transform: rotate(0deg) translateX(50px);
+  }
+  100% {
+    transform: rotate(360deg) translateX(50px);
+  }
+}

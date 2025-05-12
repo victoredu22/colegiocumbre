@@ -9,6 +9,7 @@ const theme = createTheme({
       main: `#F5F5F5`,
     },
   },
+
   typography: {
     fontFamily: "'Mukta Mahee', sans-serif",
     h1: {
@@ -30,6 +31,12 @@ const theme = createTheme({
       fontSize: "16px",
       lineHeight: "1.8em",
       fontWeight: "400",
+    },
+    subtitle2: {
+      fontFamily: "'Gochi Hand', cursive",
+      lineWeight: "1.14285714",
+      wordBreak: "break-word",
+      fontSize: "30px",
     },
     subtitle1: {
       fontSize: "17px",

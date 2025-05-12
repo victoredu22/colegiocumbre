@@ -14,6 +14,7 @@ export const TitleSection = ({ title, content }: titleProps) => {
           marginTop: { xs: "30px", md: "0px" },
           marginBottom: "0px",
         }}
+        data-aos="fade-up"
       >
         {title}
       </Typography>

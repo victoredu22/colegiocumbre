@@ -7,7 +7,7 @@ export const Footer = () => {
       sx={{
         display: { xs: "block", md: "flex" },
         justifyContent: "space-between",
-        bgcolor: "black",
+        bgcolor: "#272727",
         color: "white",
         padding: "5% 10% 5% 10%",
         textAlign: { xs: "center", md: "left" },
@@ -25,7 +25,7 @@ export const Footer = () => {
             marginLeft: { xs: "48%", md: "0%" },
           }}
         ></Box>
-        <Typography>
+        <Typography color="#DBDBDB">
           Somos una Institución que, a través de un trabajo mancomunado con la
           familia guíe la formación de un alumnado autónomo, reflexivo, crítico,
           responsable de sí mismo, inclusivo; para que contribuyan al bien común
@@ -46,16 +46,18 @@ export const Footer = () => {
             marginLeft: { xs: "48%", md: "0%" },
           }}
         ></Box>
-        <Typography>Inicio</Typography>
-        <Typography>Comunicación</Typography>
-        <Typography>Nuestro Colegio</Typography>
+        <Typography color="#DBDBDB">Inicio</Typography>
+        <Typography color="#DBDBDB">Comunicación</Typography>
+        <Typography color="#DBDBDB">Nuestro Colegio</Typography>
       </Box>
       <Box sx={{ marginTop: { xs: "40px", md: "0px" } }}>
         <Typography>Encuentranos en : </Typography>
-        <Typography>S-51, Freire</Typography>
-        <Typography>Región de la Araucanía - Chile </Typography>
-        <Typography>Telefono: +56963657018</Typography>
-        <Typography>Correo: contacto@cumbresanramon.cl</Typography>
+        <Typography color="#DBDBDB">S-51, Freire</Typography>
+        <Typography color="#DBDBDB">Región de la Araucanía - Chile </Typography>
+        <Typography color="#DBDBDB">Telefono: +56963657018</Typography>
+        <Typography color="#DBDBDB">
+          Correo: contacto@cumbresanramon.cl
+        </Typography>
       </Box>
     </Box>
   );

@@ -13,15 +13,18 @@ export const SectionUs = () => {
       <Box
         textAlign={"center"}
         sx={{
-          margin: {
-            xs: "5% 20% 5% 20%",
-          },
+          padding: "6%",
         }}
       >
-        <Typography variant="h4" color="white" marginBottom={3}>
+        <Typography
+          variant="h4"
+          color="white"
+          marginBottom={3}
+          data-aos="fade-up"
+        >
           NOSOTROS
         </Typography>
-        <Typography>
+        <Typography data-aos="fade-up">
           Tenemos como misión desarrollar en cadas uno de sus estudiantes
           saberes y competencias de carácter intelectual, físicas, emocionales y
           sociales que les permitan resolver satisfactoria y constructivamente

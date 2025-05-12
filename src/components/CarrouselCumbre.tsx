@@ -1,9 +1,20 @@
 import styles from "../styles/Home.module.css";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import { ButtonCumbre } from "./ButtonCumbre";
 
 export const CarrouselCumbre = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // duración de la animación en ms
+      once: true, // si quieres que se ejecute solo una vez
+    });
+  }, []);
+
   return (
     <div
       style={{
@@ -70,40 +81,43 @@ export const CarrouselCumbre = () => {
           }}
         >
           <img
-            style={{ height: "100%", width: "100%", filter: "brightness(50%)" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              display: "block",
+            }}
             src="./assets/img/integracion2.jpg"
           />
           <Box
             sx={{
-              zIndex: "1",
-              backgroundImage:
-                "linear-gradient(82deg, #fff 17%, rgba(31, 53, 94, .47))",
-
-              /* display: flex; */
               position: "absolute",
-              top: "0%",
-              bottom: "0%",
-              left: "0%",
-              right: "0%",
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: "rgba(255, 255, 255, 0.3)",
+              zIndex: 1,
             }}
           ></Box>
           <Box
-            color="primary.main"
             sx={{
-              zIndex: "2",
               position: "absolute",
-              top: "47%",
+              top: "45%",
               left: "50%",
               transform: "translate(-50%, -50%)",
+              zIndex: 2,
               width: "100%",
-              marginLeft: { xs: "50px", md: "10%" },
-              marginTop: "20px",
+              textAlign: "left",
+              paddingLeft: { xs: "30px", md: "10%" },
+              color: "primary.main",
             }}
           >
             <Typography
               color="primary.main"
               variant="h2"
               className={styles.titleCarrousel}
+              data-aos="fade-up"
             >
               Colegio Cumbre San Ramon
             </Typography>
@@ -114,35 +128,35 @@ export const CarrouselCumbre = () => {
               <Typography
                 variant="h4"
                 color="primary.main"
-                sx={{ fontSize: { xs: "20px", md: "none" } }}
+                sx={{ fontSize: { xs: "40px", md: "none" } }}
+                data-aos="fade-up"
               >
-                Año Escolar 2023
+                Año Escolar 2025
               </Typography>
               <Typography
                 variant="body1"
                 className={styles.subTitleCarrousel}
-                sx={{ display: { xs: "none", md: "block" }, width: "500px" }}
+                sx={{
+                  display: { xs: "none", md: "block" },
+                  width: "500px",
+                  fontSize: "19px",
+                }}
+                data-aos="fade-up"
               >
-                Esperamos que a través de esta nueva herramienta podamos
-                trasmitirte todo lo relacionado con el colegio cumbre, así como
-                información útil y necesaria para ti.
+                Descubre cómo construimos el futuro desde San Ramon. Ingresa y
+                conoce nuestra comunidad educativa.
               </Typography>
 
-              <Button
-                type="submit"
-                variant="contained"
-                sx={{
-                  borderRadius: "20px",
-                  padding: { xs: "2px", md: "10px" },
-                  width: { xs: "120px", md: "200px" },
-                  marginTop: "20px",
-                  fontWeight: "600",
-                }}
-              >
-                Información
-              </Button>
+              <Box sx={{ minWidth: "140px", flex: 1, maxWidth: "200px" }}>
+                <ButtonCumbre
+                  title="Información"
+                  type="button"
+                  href="contacto"
+                />
+              </Box>
             </Box>
           </Box>
+          href
         </Box>
       </Carousel>
     </div>
