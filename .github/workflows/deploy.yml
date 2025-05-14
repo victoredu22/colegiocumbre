@@ -30,7 +30,7 @@ jobs:
           username: root
           key: ${{ secrets.DEPLOY_KEY }}
           source: "dist/" # Cambia a 'dist/' si esa es la carpeta generada
-          target: "/var/www/"
+          target: "/var/www/colegiocumbre"
 
       - name: Final log
         uses: appleboy/ssh-action@master
