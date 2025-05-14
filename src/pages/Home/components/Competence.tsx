@@ -1,4 +1,4 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import "../../../styles/bubbles.css"; // Importa los estilos
 import PlaceIcon from "@mui/icons-material/Place";
 import { TitleSection } from "../../../components/section/TitleSection";
