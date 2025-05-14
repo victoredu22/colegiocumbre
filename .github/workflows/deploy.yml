@@ -35,3 +35,4 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           script: |
             echo "🚀 Despliegue completado."
+            cd /var/www/colegiocumbre && ls -la
