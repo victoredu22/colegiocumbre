@@ -25,7 +25,7 @@ jobs:
           username: root
           key: ${{ secrets.DEPLOY_KEY }}
           source: "build/"
-          target: "/var/www/react-app/"
+          target: "/var/www/"
 
       - name: Final log
         uses: appleboy/ssh-action@master
