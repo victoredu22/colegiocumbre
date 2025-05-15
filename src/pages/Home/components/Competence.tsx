@@ -26,11 +26,11 @@ export const Competence = () => {
         color="#64697a"
       >
         <Typography sx={{ maxWidth: 600 }}>
-          Diseñado y construido ex profeso para dar a nuestros alumnos
-          excelentes condiciones de SEGURIDAD, COMODIDAD e HIGIENE.
+          Diseñado y construido para dar a nuestros alumnos excelentes
+          condiciones de SEGURIDAD, COMODIDAD e HIGIENE.
         </Typography>
         <Typography sx={{ marginTop: "10px", maxWidth: 600 }}>
-          Cerro Blanco 990, Centro Sur, 76090 Santiago de Querétaro, Querétaro.
+          Colegio Cumbre de San Ramón, Padre Las Casas, Araucanía.
         </Typography>
       </Box>
       <Box
